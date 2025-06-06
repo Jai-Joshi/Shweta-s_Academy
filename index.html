@@ -622,10 +622,10 @@
             height: 250px;
         }
 
-        .gallery-item:hover {
+        /* .gallery-item:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
+        } */
 
         .gallery-item::before {
             content: '';
@@ -640,9 +640,9 @@
             transition: opacity 0.3s ease;
         }
 
-        .gallery-item:hover::before {
+        /* .gallery-item:hover::before {
             opacity: 1;
-        }
+        } */
 
         .gallery-image {
             width: 100%;
@@ -692,9 +692,9 @@
             z-index: 2;
         }
 
-        .gallery-item:hover .gallery-overlay {
+        /* .gallery-item:hover .gallery-overlay {
             transform: translateY(0);
-        }
+        } */
 
         .gallery-overlay h4 {
             font-size: 1.2rem;
@@ -1238,7 +1238,7 @@
         <div class="container">
             <div class="section-title animate-on-scroll">
                 <h2>Our Courses</h2>
-                <p>Comprehensive learning programs designed for students from Class 5 to 12</p>
+                <p>Comprehensive learning programs designed for students from Class 5 to 10</p>
             </div>
             <div class="services-grid">
                 <div class="service-card animate-on-scroll">
@@ -1269,7 +1269,7 @@
                     </div>
                     <h3>Languages</h3>
                     <p>Comprehensive language programs focusing on grammar, literature, writing skills, and
-                        communication for English and regional languages.</p>
+                        communication for English, French and Sanksrut.</p>
                 </div>
             </div>
         </div>
@@ -1432,7 +1432,7 @@
                         </div>
                         <div>
                             <h4>Address</h4>
-                            <p>Karve Nagar Pune,Maharashtra 411052</p>
+                            <p>Shahu Colony, Karve Nagar Pune,Maharashtra 411052</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1441,7 +1441,7 @@
                         </div>
                         <div>
                             <h4>Phone</h4>
-                            <p>+91 98765 43210</p>
+                            <p>+91 98509 01252</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1450,7 +1450,7 @@
                         </div>
                         <div>
                             <h4>Email</h4>
-                            <p>rutujasmohod@gmail.com</p>
+                            <p>ulheajay@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1459,7 +1459,7 @@
                         </div>
                         <div>
                             <h4>Hours</h4>
-                            <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
+                            <p>Mon - Sat: 8:30 AM - 6:30 PM</p>
                         </div>
                     </div>
                 </div>
@@ -1501,12 +1501,12 @@
                     <h3>Shweta's Academy</h3>
                     <p>Empowering students with quality education and personalized learning experiences. Join us in the
                         journey of academic excellence.</p>
-                    <div class="social-icons">
+                    <!-- <div class="social-icons">
                         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
@@ -1523,14 +1523,13 @@
                     <p><a href="#services">Science</a></p>
                     <p><a href="#services">Languages</a></p>
                     <p>Board Exam Preparation</p>
-                    <p>Competitive Exams</p>
                 </div>
                 <div class="footer-section">
                     <h3>Contact Info</h3>
                     <p><i class="fas fa-phone"></i> +91 98765 43210</p>
-                    <p><i class="fas fa-envelope"></i> rutujasmohod@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i>Karve Nagar Pune,Maharashtra 411052</p>
-                    <p><i class="fas fa-clock"></i> Mon-Sat: 9AM-8PM</p>
+                    <p><i class="fas fa-envelope"></i> ulheajay@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Shahu Colony,Karve Nagar Pune,Maharashtra 411052</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 8.30 AM-6.30 PM</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -1649,7 +1648,7 @@
                 phone: formData.get('phone'),
                 student_class: formData.get('class'),
                 message: formData.get('message') || 'No specific message provided',
-                to_email: 'rutujasmohod@gmail.com'
+                to_email: 'ulheajay@gmail.com'
             };
 
             // Validation
@@ -1674,7 +1673,7 @@
                 },
                 function (error) {
                     console.log('FAILED...', error);
-                    showMessage('Sorry, there was an error sending your message. Please try again later or contact us directly at rutujasmohod@gmail.com.', 'error');
+                    showMessage('Sorry, there was an error sending your message. Please try again later or contact us directly at ulheajay@gmail.com.', 'error');
 
                     // Fallback to mailto
                     setTimeout(() => {
@@ -1763,7 +1762,7 @@
 This inquiry was submitted through the Shweta's Academy website contact form.
     `);
 
-            window.location.href = `mailto:rutujasmohod@gmail.com?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:ulheajay@gmail.com?subject=${subject}&body=${body}`;
         }
         // Counter Animation
         const animateCounters = () => {
